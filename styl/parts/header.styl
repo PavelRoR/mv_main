@@ -1,0 +1,56 @@
+#header
+    padding: 20px 0
+    overflow hidden
+#logo
+    float left
+    width: 220px
+    height auto
+    margin-right: 100px
+#contacts
+    text-align: right
+    float left
+    a
+        font-size: 16px;
+        font-family: "HelveticaNeueCyrMedium", sans-serif;
+        color: rgb(84, 82, 254);
+        line-height: 1.625;
+        text-align: right;
+        margin-right: 24px
+        line-height: 32px;
+        span
+            font-family: "HelveticaNeueCyrRoman", sans-serif;
+            color: rgb(29, 36, 43);
+            text-align: right;
+            margin-left: 4px
+        &:last-child
+            margin-right: 0
+        &:hover
+            text-decoration: none
+            span
+                text-decoration: underline
+        &:focus
+            text-decoration: none
+#soc_buttons
+    float: right
+    width: 164px
+    display: table
+    a
+        display: table-cell
+        vertical-align: middle
+        .fa
+            border-radius: 50%
+            background-color: rgb(30,28,251);
+            background-image: linear-gradient( 174deg, rgb(30,28,251) 0%, rgb(69,67,251) 100%);
+            width: 32px;
+            height: 32px;
+            line-height: 32px
+            color #fdfafa
+            font-size: 20px
+            text-align: center
+            transition all .3s ease-in-out
+        &:hover
+            .fa
+                color #fdfcfd
+                background-color: #252525
+                background-image: linear-gradient(174deg,transparent, transparent);
+                transition all .3s ease-in
