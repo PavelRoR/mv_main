@@ -1,0 +1,22 @@
+mixin cir(cat, h, author,time)
+    .cir_single
+        p.cir_cat= cat
+        h4.cir_title= h
+        p.cir_author= author
+        a.cir_button(href="javascript:void(0)", target="_blank") Купить за 970р.
+        p.cir_time 
+            img(src="img/clock.png", alt="Время")
+            =time
+
+section#courses_in_record
+    .container
+        #title_an_rules
+            h3 Курсы в записи
+            p.course_nums 12 курсов
+            #cir_nav
+                a(href="#!").cir_arrow.cir_prev &larr;
+                a(href="#!").cir_arrow.cir_next &rarr;
+        #cir_slider
+            +cir('Магия','Секреты рун','Василий Попов','04:35:40')
+            +cir('Нумерология','Магия цифр','Ольга Герасимова','04:35:40')
+            +cir('Таро','Секреты Таро','Василий Попов','04:35:40')
