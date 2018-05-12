@@ -1,0 +1,48 @@
+#articles
+	#main_screen
+		padding-bottom: 108px
+	.main_title
+		margin-bottom: 29px
+#articles_list
+	padding: 100px 0
+	.article_col
+		.lp_single
+			display block
+			margin: 0 auto 60px
+			float: none
+		&:nth-child(3n+1)
+			.lp_cat
+				background-color: rgb(207, 116, 18)
+		&:nth-child(3n)
+			.lp_cat
+				background-color: #20bb83
+		&:nth-child(3n+2)
+			.lp_cat
+				background-color: #554994
+.articles_pagination
+	width: 300px
+	margin: 15px auto 0
+	display: table
+	text-align: center
+	li
+		list-style: none
+		display: table-cell
+		vertical-align: middle
+		a
+			display block
+			margin: 0 auto
+			width 50px
+			height: 50px
+			line-height: 50px
+			border-radius: 50%
+			font-size: 20px;
+			font-family: "HelveticaNeueCyrRoman", sans-serif;
+			color: rgb(31, 31, 31);
+		&:hover
+			a
+				background-color: rgba(#2220fb, .2)
+				text-decoration: none
+	.active_pag
+		a
+			background-color: rgba(#2220fb, 1)
+			color #fff

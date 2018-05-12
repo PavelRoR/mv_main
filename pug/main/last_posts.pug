@@ -1,15 +1,14 @@
 mixin lp(cat, src,h, p,time)
-    a(href="javascript:void(0);").lp_permalink
-        .lp_single
-            p.lp_cat= cat
-            img.lp_thumbnail(src= src, alt= h)
-            .lp_about
-                h4.lp_title= h
-                p= p
-            a.lp_more(href="javascript:void(0);", target="_blank") &rarr;
-            p.lp_seen
-                i.fa.fa-eye(aria-hidden="true") 
-                | 32
+    a(href="javascript:void(0);").lp_single
+        p.lp_cat= cat
+        img.lp_thumbnail(src= src, alt= h)
+        .lp_about
+            h4.lp_title= h
+            p= p
+        .lp_more &rarr;
+        .lp_seen
+            i.fa.fa-eye(aria-hidden="true") 
+            | 32
 
 
 section#last_posts

@@ -5,20 +5,19 @@ html(lang="ru")
 		meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
 		meta(name="author" content="MasterVision")
-		meta(name="description" content=" «MasterVision»")
+		meta(name="description" content="«MasterVision» | Статьи сайта")
 		link(rel="icon" type="image/x-icon" href="favicon.ico")
 		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
-		title «MasterVision»
+		title «MasterVision» | Статьи сайта
 		link(rel="stylesheet" href="css/bootstrap.min.css")
-		//- link(rel="stylesheet" href="css/owl.carousel.css")
 		link(rel="stylesheet" href="css/styles.css")
-	body#main_body
+	body#articles
 		include pug/header
-		include pug/main/main_screen
-		include pug/main/rec_courses
-		include pug/main/about_ezo
-		include pug/main/why_imp
-		include pug/main/news
-		include pug/main/last_posts
+		include pug/articles/main_screen
+		include pug/articles/articles
+		//- include pug/main/about_ezo
+		//- include pug/main/why_imp
+		//- include pug/main/news
+		//- include pug/main/last_posts
 		include pug/footer
 		include pug/scripts

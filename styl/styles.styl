@@ -1,11 +1,7 @@
 @font-face {
 	font-family: 'HelveticaNeueCyrBlack';
 	src: url('../fonts/HelveticaNeueCyrBlack.eot');
-	src: url('../fonts/HelveticaNeueCyrBlack.eot') format('embedded-opentype'),
-		 url('../fonts/HelveticaNeueCyrBlack.woff2') format('woff2'),
-		 url('../fonts/HelveticaNeueCyrBlack.woff') format('woff'),
-		 url('../fonts/HelveticaNeueCyrBlack.ttf') format('truetype'),
-		 url('../fonts/HelveticaNeueCyrBlack.svg#HelveticaNeueCyrBlack') format('svg');
+	src: url('../fonts/HelveticaNeueCyrBlack.eot') format('embedded-opentype'),url('../fonts/HelveticaNeueCyrBlack.woff2') format('woff2'),url('../fonts/HelveticaNeueCyrBlack.woff') format('woff'),url('../fonts/HelveticaNeueCyrBlack.ttf') format('truetype'),url('../fonts/HelveticaNeueCyrBlack.svg#HelveticaNeueCyrBlack') format('svg');
 }
 @font-face {
 	font-family: 'HelveticaNeueCyrBold';
@@ -56,13 +52,29 @@ h4
 h5
 h6
 	font-family: "HelveticaNeueCyrBold", sans-serif;
+.main_title
+	font-size: 42px;
+	font-family: "HelveticaNeueCyrBlack",sans-serif;
+	color: #fff
+	line-height: 1
+	margin: 0 0 41px
+.main_subtitle
+	font-size: 20px;
+	font-family: "HelveticaNeueCyrRoman", sans-serif;
+	color: rgb(255, 255, 255);
+	line-height: 1.4;
+	max-width: 730px
 a
 	color: #fefefe
 	cursor: no-drop
 	&:focus
+		text-decoration: none
 		outline: 0
 p
 	line-height: 1
+	font-size: 18px;
+	font-family: "HelveticaNeueCyrMedium", sans-serif;
+	color: rgb(98, 103, 121);
 .video_wrapper
 	margin 0 auto
 	position relative
@@ -100,11 +112,12 @@ input:-webkit-autofill {
 	-webkit-animation-fill-mode: both;
 }
 
-@import 'parts/header'
-@import 'parts/main_screen'
-@import 'parts/cir'
-@import 'parts/about_ezo'
-@import 'parts/why_imp'
-@import 'parts/news'
-@import 'parts/last_posts'
-@import 'parts/footer'
+@import 'main/header'
+@import 'main/main_screen'
+@import 'main/cir'
+@import 'main/about_ezo'
+@import 'main/why_imp'
+@import 'main/news'
+@import 'main/last_posts'
+@import 'articles/articles'
+@import 'main/footer'
