@@ -1,0 +1,36 @@
+section#news
+    .container
+        h3 Что нового
+        .row
+            .col-md-4.col-sm-6.col-xs-12
+                form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="_blank").main_form
+                    h4.main_form_title Будьте в курсе!
+                    p.main_form_subtitle Подпишитесь на наши новости, и получайте видео бонусы
+                    input(value="1" name="required_fields[email]" type="hidden")
+                    input(class="main_form_email" maxlength="255" name="Contact[email]" placeholder="Ваш E-mail")
+                    button(type="submit" ).main_form_button Получить материалы
+                    input(value="65" name="Contact[id_newsletter]" type="hidden")
+                    input(value="0" name="Contact[id_advertising_channel_page]" type="hidden")
+                a(href="javascript:void(0);",target="_blank")
+                    .news_video_container.secondary_nvc
+                        h4.about_esoteric_title Сенсационный проект Трансформация уже в открытом доступе! Решение проблем с помощью Экстрасенсов!
+                        img(src="img/news_pic_2.jpg", alt="Василий Попов об Эзотерике")
+            .col-md-8.col-sm-6.col-xs-12
+                a(href="javascript:void(0);",target="_blank")
+                    .news_video_container.main_nvc
+                        h4.about_esoteric_title Посиделки Онлайн с Василием Поповым 13 апреля 2018г
+                        img(src="img/news_pic_1.jpg", alt="Василий Попов об Эзотерике")
+        #news_soc_block
+            .nsb_title
+                h4 Не пропустите самое интересное на Master Vision
+                p Следите за нами в социальных сетях
+            #news_soc_buttons
+                .soc_buttons
+                    a(href="https://www.facebook.com/Mastervision1C/", target="_blank")
+                        i.fa.fa-facebook(aria-hidden="true")
+                    a(href="http://vk.com/mv_ezoterika", target="_blank")
+                        i.fa.fa-vk(aria-hidden="true")
+                    a(href="https://www.youtube.com/channel/UCiJTdt19jRMRmYyCZac2Lvg/", target="_blank")
+                        i.fa.fa-youtube-play(aria-hidden="true")
+                    a(href="https://ok.ru/mv.ezoterika", target="_blank")
+                        i.fa.fa-odnoklassniki(aria-hidden="true")

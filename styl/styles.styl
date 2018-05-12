@@ -82,10 +82,22 @@ p
 #main_body
 	background-color: #f7f8fa
 
+@-webkit-keyframes autofill {
+    to {
+        color: #000;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
 
 @import 'parts/header'
 @import 'parts/main_screen'
 @import 'parts/cir'
 @import 'parts/about_ezo'
 @import 'parts/why_imp'
+@import 'parts/news'
 @import 'parts/footer'
