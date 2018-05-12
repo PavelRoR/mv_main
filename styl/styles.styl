@@ -45,6 +45,8 @@
 	margin 0
 	padding 0
 	outline none
+body
+	background-color: #f7f8fa
 h1
 h2
 h3
@@ -52,6 +54,8 @@ h4
 h5
 h6
 	font-family: "HelveticaNeueCyrBold", sans-serif;
+ul
+	list-style none
 .main_title
 	font-size: 42px;
 	font-family: "HelveticaNeueCyrBlack",sans-serif;
@@ -97,8 +101,7 @@ p
 		right 0
 		bottom 0
 		cursor pointer
-#main_body
-	background-color: #f7f8fa
+
 
 @-webkit-keyframes autofill {
 	to {
@@ -111,6 +114,15 @@ input:-webkit-autofill {
 	-webkit-animation-name: autofill;
 	-webkit-animation-fill-mode: both;
 }
+#main_screen
+	width: 100%
+	padding: 24px 0 100px
+	background-image url(../img/main_bg.jpg)
+	background-size: cover
+	background-repeat no-repeat
+	background-position 0 bottom
+	.container
+		position relative
 
 @import 'main/header'
 @import 'main/main_screen'
@@ -120,4 +132,5 @@ input:-webkit-autofill {
 @import 'main/news'
 @import 'main/last_posts'
 @import 'articles/articles'
+@import 'articles/single_article'
 @import 'main/footer'
