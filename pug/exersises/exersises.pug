@@ -1,0 +1,15 @@
+mixin lp(src,h, p)
+    .col-lg-4.col-md-6.col-sm-6.col-xs-12.exersise_col
+        a(href="javascript:void(0);").lp_single
+            img.lp_thumbnail(src= src, alt= h)
+            .lp_about
+                h4.lp_title= h
+                p= p
+            .button.lp_button Начать упражнение
+section#exersises_list
+    .container
+        .row
+            +lp('img/ex_1.jpg','Упражнение "Генератор чисел"','Тест на проверку и развитие экстрасенсорных способностей')
+            +lp('img/ex_2.jpg','Упражнение "Таблица Шульте"','Упражнение для развития внимания и скорости восприятия')
+            +lp('img/ex_3.jpg','Упражнение "Генератор цвета"','Тест на проверку и развитие экстрасенсорных способностей')
+            +lp('img/ex_4.jpg','Упражнение "Карты Зенера"','Тест на проверку и развитие экстрасенсорных способностей')
