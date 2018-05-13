@@ -68,6 +68,7 @@ ul
 	color: rgb(255, 255, 255);
 	line-height: 1.4;
 	max-width: 730px
+	font-weight: normal;
 a
 	color: #fefefe
 	cursor: no-drop
@@ -101,7 +102,8 @@ p
 		right 0
 		bottom 0
 		cursor pointer
-
+iframe
+	border: 0
 
 @-webkit-keyframes autofill {
 	to {
@@ -114,6 +116,10 @@ input:-webkit-autofill {
 	-webkit-animation-name: autofill;
 	-webkit-animation-fill-mode: both;
 }
+button
+	background-color: transparent
+	cursor: no-drop
+	border: 0
 .button
 	display: inline-block
 	background-image: linear-gradient( 174deg, rgb(30,28,251) 0%, rgb(69,67,251) 100%);
@@ -126,9 +132,13 @@ input:-webkit-autofill {
 	color: #fdfcfd
 	text-transform: uppercase;
 	text-align: center
+	&:focus
+		color: #fdfcfd
+		text-decoration: none
 	&:hover
-		background-image: linear-gradient( 0, transparent 0%, transparent 100%);
-		background-color: #252525 
+		background-image: linear-gradient( 0deg, transparent 0%, transparent 100%);
+		background-color: #252525
+		text-decoration: none
 #main_screen
 	width: 100%
 	padding: 24px 0 100px
@@ -150,4 +160,5 @@ input:-webkit-autofill {
 @import 'articles/articles'
 @import 'articles/single_article'
 @import 'exersises/exersises'
+@import 'contacts/contacts'
 @import 'main/footer'

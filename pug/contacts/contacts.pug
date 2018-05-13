@@ -1,0 +1,16 @@
+section#contacts_list
+    .row
+        .col-md-6.col-sm-6.col-xs-12
+            iframe#map(src="https://yandex.ru/map-widget/v1/?um=constructor%3A309c50b14e572f0312060d4bafa77b6006ce3798523e0ee8c3147f0f9a0c5d6b&;source=constructor")
+        .col-md-6.col-sm-6.col-xs-12
+            #feedback
+                form(action="#!" method="POST").feedback_form
+                    h3 Написать нам
+                    input(type="text" name="name" required placeholder="Ваше имя")
+                    input(type="email" name="email" required placeholder="Ваш Email")
+                    textarea(name="msg" required placeholder="Сообщение")
+                    .checking
+                        input(type="checkbox" id="check").check
+                        label(for="check").check_label Я согласен с условиями обработки 
+                            a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  персональных данных
+                    button.button(type="submit")(onclick="function(e){e.preventDefault();}") Отправить
