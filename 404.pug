@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		meta(name="author" content="MasterVision")
+		meta(name="description" content="Страница не найдена")
+		link(rel="icon" type="image/x-icon" href="favicon.ico")
+		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
+		title Страница не найдена
+		link(rel="stylesheet" href="css/bootstrap.min.css")
+		//- link(rel="stylesheet" href="css/owl.carousel.css")
+		link(rel="stylesheet" href="css/styles.css")
+	body#error_page
+		include pug/header
+		section#main_screen
+			.container
+				include pug/menu
+				h1.main_title Страница не найдена...
+		section#error
+			.container
+				p Страница не найдена... Попробуйте другой запрос или проверьте адрес страницы
+		include pug/footer
+		include pug/scripts
