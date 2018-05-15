@@ -1,0 +1,30 @@
+mixin coach(h5,p,href)
+        .team_card(data-toggle="modal" data-target="#alex")
+            h5= h5
+            p= p
+            .arrow_more(data-toggle="modal" data-target="#alex") &rarr;
+            .coach
+section#our_team
+    .container
+        h3 Наша команда
+        p.team_subtitle Преподаватели нашей академии не теоретики, а действующие практики, гуру прикладной эзотерики
+        h4 Организаторы
+        .row
+            .col-md-6.col-sm-6.organizers
+                +coach('Александр Кудряшов','генеральный директор MasterVision')
+            .col-md-6.col-sm-6.organizers
+                +coach('Андрей Грудин','управляющий партнер MasterVision')
+        h4 Тренерский состав
+        .row
+            .col-md-6.col-sm-6.coaches
+                +coach('Василий Попов','эзотерик, мистик, целитель')
+            .col-md-6.col-sm-6.coaches
+                +coach('Ольга веда','потомственная волшебница в III поколении')
+            .col-md-6.col-sm-6.coaches
+                +coach('Жанна Абрамова','психолог, женский тренер')
+            .col-md-6.col-sm-6.coaches
+                +coach('Виктор Толстиков','эзотерик, потомственный маг')
+            .col-md-6.col-sm-6.coaches
+                +coach('Александр Кудряшов','экстрасенс, парапсихолог, мастер Расстановок по Хелленгеру')
+            .col-md-6.col-sm-6.coaches
+                +coach('Регина Крашенинникова','пальмистр, хиромант')

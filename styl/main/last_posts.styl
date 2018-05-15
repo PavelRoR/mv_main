@@ -84,7 +84,7 @@
         color: rgba(85, 94, 124, 0.8);
         line-height: 1.444;
         margin-bottom: 0
-.lp_more
+.arrow_more
     border: 2px solid rgba(40, 53, 160, .2);
     border-radius: 50%;
     width: 36px;
@@ -97,10 +97,16 @@
     display block
     text-align: center
     font-size: 16px
+    cursor pointer
     &:focus
         text-decoration: none
+    &:hover
+        background-image: linear-gradient( 174deg, rgb(30,28,251) 0%, rgb(69,67,251) 100%);
+        color #f7f8fa
+        text-decoration: none
 .lp_single:hover
-    .lp_more
+.team_card:hover
+    .arrow_more
         background-image: linear-gradient( 174deg, rgb(30,28,251) 0%, rgb(69,67,251) 100%);
         color #f7f8fa
         text-decoration: none
