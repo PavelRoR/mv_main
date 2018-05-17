@@ -117,3 +117,18 @@ footer#footer
 							a(href="mailto:info@mastervision.su") 
 								span e-mail: 
 								|  info@mastervision.su
+.modal.fade(tabindex="-1" role="dialog")#modalSubscribe
+	.modal-dialog(role="document")
+		.modal-content
+			.modal-wrapper
+				.modal-body
+					button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") &times;
+					form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&amp;id=3568&amp;lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="_blank").main_form
+						h4.main_form_title Будьте в курсе!
+						p.main_form_subtitle Подпишитесь на наши новости, и получайте видео бонусы
+						input(value="1" name="required_fields[email]" type="hidden")
+						input(class="main_form_email" maxlength="255" name="Contact[email]" placeholder="Ваш E-mail")
+						button(type="submit" ).main_form_button Получить материалы
+						input(value="65" name="Contact[id_newsletter]" type="hidden")
+						input(value="0" name="Contact[id_advertising_channel_page]" type="hidden")
