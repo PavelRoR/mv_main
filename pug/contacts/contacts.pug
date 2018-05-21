@@ -20,7 +20,7 @@ section#contacts_list
                     input(type="email" name="email" required placeholder="Ваш Email")
                     textarea(name="msg" required placeholder="Сообщение")
                     .checking
-                        input(type="checkbox" id="check").check
+                        input(type="checkbox" id="check" checked).check
                         label(for="check").check_label Я согласен с условиями обработки 
                             a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  персональных данных
                     button.button(type="submit")(onclick="function(e){e.preventDefault();}") Отправить
