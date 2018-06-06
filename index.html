@@ -10,6 +10,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
     <title>«MasterVision»</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/lightslider.min.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
   </head>
   <body id="main_body">
@@ -27,15 +28,16 @@
         <ul id="main_menu">
           <li> <a href="/mv_main">Главная</a></li>
           <li> <a href="exersises">Упражнения</a></li>
-          <li> <a href="articles">статьи</a></li>
-          <li> <a href="about">о нас </a></li>
+          <li> <a href="articles">Статьи</a></li>
+          <li> <a href="about">О нас </a></li>
           <li> <a href="faq">faq</a></li>
-          <li> <a href="contacts">контакты</a></li>
+          <li> <a href="contacts">Контакты</a></li>
+          <li> <a href="javascript:void(0);">Личная консультация</a></li>
         </ul>
         <h1 class="main_title">Ближайшие мероприятия</h1>
       </div>
       <div id="main_slider_container">
-        <div id="main_slider"><a class="item" href="javascript:void(0);"><img src="img/banner_2.jpg" alt="Баннер 1"/></a><a class="item" href="javascript:void(0);"><img src="img/banner_2.jpg" alt="Баннер 2"/></a><a class="item" href="javascript:void(0);"><img src="img/banner_2.jpg" alt="Баннер 2"/></a></div>
+        <div id="main_slider"><a class="item" href="javascript:void(0);"><img src="img/1024CHRM3.jpg" alt="Баннер 1"/></a><a class="item" href="javascript:void(0);"><img src="img/1024AYUR.jpg" alt="Баннер 2"/></a></div>
       </div>
     </section>
     <section id="courses_in_record">
@@ -44,26 +46,32 @@
           <div class="col-md-3 col-sm-3 title_an_rules">
             <h3>Курсы в записи</h3>
             <p class="course_nums">12 курсов</p>
-            <div class="slider_nav"><a class="cir_arrow cir_prev" href="javascript:void(0);">&larr;</a><a class="cir_arrow cir_next" href="javascript:void(0);">&rarr;</a></div>
           </div>
           <div id="cir_slider">
-                <div class="cir_single">
+                <div class="cir_single"><img class="cir_img" src="img/course_rec_1.jpg" alt="Секреты рун"/>
                   <p class="cir_cat">Магия</p>
                   <h4 class="cir_title">Секреты рун</h4>
                   <p class="cir_author">Василий Попов</p><a class="cir_button" href="javascript:void(0);" target="_blank">Купить за 970р.</a>
                   <p class="cir_time"> <img src="img/clock.png" alt="Время"/>04:35:40
                   </p>
                 </div>
-                <div class="cir_single">
+                <div class="cir_single"><img class="cir_img" src="img/course_rec_2.jpg" alt="Магия цифр"/>
                   <p class="cir_cat">Нумерология</p>
                   <h4 class="cir_title">Магия цифр</h4>
                   <p class="cir_author">Ольга Герасимова</p><a class="cir_button" href="javascript:void(0);" target="_blank">Купить за 970р.</a>
                   <p class="cir_time"> <img src="img/clock.png" alt="Время"/>04:35:40
                   </p>
                 </div>
-                <div class="cir_single">
+                <div class="cir_single"><img class="cir_img" src="img/course_rec_1.jpg" alt="Секреты Таро"/>
                   <p class="cir_cat">Таро</p>
                   <h4 class="cir_title">Секреты Таро</h4>
+                  <p class="cir_author">Василий Попов</p><a class="cir_button" href="javascript:void(0);" target="_blank">Купить за 970р.</a>
+                  <p class="cir_time"> <img src="img/clock.png" alt="Время"/>04:35:40
+                  </p>
+                </div>
+                <div class="cir_single"><img class="cir_img" src="img/course_rec_1.jpg" alt="Секреты рун"/>
+                  <p class="cir_cat">Магия</p>
+                  <h4 class="cir_title">Секреты рун</h4>
                   <p class="cir_author">Василий Попов</p><a class="cir_button" href="javascript:void(0);" target="_blank">Купить за 970р.</a>
                   <p class="cir_time"> <img src="img/clock.png" alt="Время"/>04:35:40
                   </p>
@@ -77,8 +85,8 @@
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
             <div id="about_eso_video_container"> 
-              <h4 class="about_esoteric_title">Что такое Эзотерика, и почему Вам есть смысл уже сейчас начать ее изучать?<br/><small>Василий Попов</small></h4>
-              <div class="video_wrapper" data-youtube="J7UboM0sj4g"><img src="img/about_eso.jpg" alt="Василий Попов об Эзотерике"/></div>
+              <h4 class="about_esoteric_title">Почему важно заниматься саморазвитием?<br/><small>Александр Кудряшов</small></h4>
+              <div class="video_wrapper" data-youtube="0C9Bwzai1XU"><img src="img/about_eso.jpg" alt="Василий Попов об Эзотерике"/></div>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
@@ -178,8 +186,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-3 col-md-3 title_an_rules">
-            <h3>Последние статьи на сайте</h3>
-            <div class="slider_nav"><a class="cir_arrow cir_prev" href="javascript:void(0);">&larr;</a><a class="cir_arrow cir_next" href="javascript:void(0);">&rarr;</a></div><a class="all_posts" href="javascript:void(0);" target="_blank">Все статьи</a>
+            <h3>Последние статьи на сайте</h3><a class="all_posts" href="javascript:void(0);" target="_blank">Все статьи</a>
           </div>
           <div id="last_posts_slider"><a class="lp_single" href="single_article">
                   <p class="lp_cat">Экстрасенсорика</p><img class="lp_thumbnail" src="img/lp_pic_1.jpg" alt="Дистанционное видение, основанное на интуиции"/>
@@ -200,6 +207,13 @@
                   <div class="lp_about">
                     <h4 class="lp_title">Идеальный подход в поиске совместимости партнеров</h4>
                     <p>Мечтать о счастливой совместной жизни с партнёром не запретишь! Но всем ли женщинам удаётся подобрать единственного, который не предаст, поддержит, защитит?</p>
+                  </div>
+                  <div class="arrow_more">&rarr;</div>
+                  <div class="lp_seen"><i class="fa fa-eye" aria-hidden="true"> </i>32</div></a><a class="lp_single" href="single_article">
+                  <p class="lp_cat">Астрология</p><img class="lp_thumbnail" src="img/lp_pic_2.jpg" alt="Исцеляющая астрология"/>
+                  <div class="lp_about">
+                    <h4 class="lp_title">Исцеляющая астрология</h4>
+                    <p>Чего проще? — заходи в сеть и ищи, какой дом отвечает за здоровье. Какая управляющая планета у вас в этом доме?...</p>
                   </div>
                   <div class="arrow_more">&rarr;</div>
                   <div class="lp_seen"><i class="fa fa-eye" aria-hidden="true"> </i>32</div></a>
@@ -284,7 +298,9 @@
     </div>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightslider.min.js"></script>
     <script src="js/scripts.js"></script><!--Yandex.Metrika counter-->
     <!--script| (function(d, w, c) {(w[c] = w[c] || []).push(function() {try {w.yaCounter35450015 = new Ya.Metrika({id: 35450015,clickmap: true,trackLinks: true,accurateTrackBounce: true,webvisor: true});} catch (e) {}});var n = d.getElementsByTagName("script")[0],s = d.createElement("script"),f = function() {n.parentNode.insertBefore(s, n);};s.type = "text/javascript";s.async = true;s.src = "https://mc.yandex.ru/metrika/watch.js";if (w.opera == "[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else {f();}})(document, window, "yandex_metrika_callbacks");
     -->

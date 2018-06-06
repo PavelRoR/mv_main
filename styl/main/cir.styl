@@ -14,56 +14,62 @@
     font-family: "HelveticaNeueCyrRoman", sans-serif;
     color: rgb(34, 32, 251);
     line-height: 1.444;
-.slider_nav
+.lSAction
     margin-top: 87px
     width 134px
     overflow hidden
-.cir_arrow
-    border-radius: 50%;
-    background-color: rgb(34, 32, 251);
-    width: 50px;
-    height: 50px;
-    line-height: 47px
-    color #f8f8f9
-    font-size: 24px
-    text-align: center
-    &:hover
-        background-color: #252525
+    position: absolute
+    left 15px
+    top: 112px
+    z-index 99
+    a
+        border-radius: 50%;
+        background-color: rgb(34, 32, 251);
+        width: 50px;
+        height: 50px;
+        line-height: 47px
         color #f8f8f9
-        text-decoration: none
-    &:focus
-        color #f8f8f9
-        text-decoration: none
-.cir_prev
-    float left
-.cir_next
-    float: right
+        font-size: 24px
+        text-align: center
+        display block
+        &:hover
+            background-color: #252525
+            color #f8f8f9
+            text-decoration: none
+        &:focus
+            color #f8f8f9
+            text-decoration: none
+        &:first-child
+            float left
+        &:last-child
+            float: right
 #cir_slider
-     width: 2000px
+    width: 3000px  !important
+    // transform: translate3d(0, 0px, 0px)
+#courses_in_record
+    .lSSlideOuter
+        width: 150%
 .cir_single
     border-radius: 3px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.07);
-    width: 360px;
+    width: 360px  !important
     height: 420px;
     display: inline-block
     margin 0 15px
     position relative
     padding: 29px
     float left
-    &:nth-child(1)
-        background-image url(../img/course_rec_1.jpg)
-        background-repeat no-repeat
-        background-position 0 0
-    &:nth-child(2)
-        background-image url(../img/course_rec_2.jpg)
-        background-repeat no-repeat
-        background-position 0 0
-    &:nth-child(3)
-        background-image url(../img/course_rec_1.jpg)
-        background-repeat no-repeat
-        background-position 0 0
-
+    // left -233px
+.cir_img
+    width inherit 
+    height auto
+    position: absolute
+    top: 0
+    left 0
+    right 0
+    bottom: 0
+    z-index 0
 .cir_cat
     font-size: 10px;
     font-family: "HelveticaNeueCyrLight", sans-serif;
@@ -71,17 +77,25 @@
     text-transform: uppercase;
     line-height: 1
     margin: 0
+    z-index 9
+    position: absolute
+    top: 30px
+    left 30px
 .cir_title
     font-size: 24px;
     font-family: "HelveticaNeueCyrBold", sans-serif;
     color: rgb(255, 255, 255);
     line-height: 1.1
     margin:  175px 0 12px
+    position relative
+    z-index 9
 .cir_author
     font-size: 16px;
     font-family: "HelveticaNeueCyrRoman", sans-serif;
     color: rgb(255, 255, 255);
     line-height: 1.2
+    position relative
+    z-index 9
 .cir_button
     background-image: linear-gradient( 174deg, rgb(30,28,251) 0%, rgb(69,67,251) 100%);
     border-radius: 23px
@@ -116,3 +130,27 @@
     letter-spacing: -0.7px;
     img
         margin-right: 12px
+.slider_nav
+    margin-top: 87px
+    width 134px
+    overflow hidden
+.cir_arrow
+    border-radius: 50%;
+    background-color: rgb(34, 32, 251);
+    width: 50px;
+    height: 50px;
+    line-height: 47px
+    color #f8f8f9
+    font-size: 24px
+    text-align: center
+    &:hover
+        background-color: #252525
+        color #f8f8f9
+        text-decoration: none
+    &:focus
+        color #f8f8f9
+        text-decoration: none
+.cir_prev
+    float left
+.cir_next
+    float: right
