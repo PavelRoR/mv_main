@@ -2,16 +2,16 @@ $(document).ready(function() {
     $("#main_slider").lightSlider({
         item: 2,
         autoWidth: false,
-        slideMove: 1, // slidemove will be 1 if loop is true
+        slideMove: 1, 
         slideMargin: 20,
         mode: "slide",
         useCSS: true,
-        cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+        cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)',
         controls: false,
-        easing: 'linear', //'for jquery animation',////
-        speed: 2000, //ms'
-        auto: false,
-        loop: false,
+        easing: 'linear', 
+        speed: 2000, 
+        auto: true,
+        loop: true,
         slideEndAnimation: false,
         pause: 5000,
         pauseOnHover: true,
@@ -30,15 +30,13 @@ $(document).ready(function() {
         item: 3,
         autoWidth: false,
         slideMove: 1, 
-        // slideMargin: 60,
         mode: "slide",
         useCSS: true,
         cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-        // easing: 'linear',
         controls: true,
         prevHtml: '&larr;',
         nextHtml: '&rarr;',
-        speed: 1000, //ms'
+        speed: 1000, 
         auto: false,
         loop: false,
         slideEndAnimation: !0,
@@ -52,22 +50,19 @@ $(document).ready(function() {
         gallery: false,
         enableTouch:true,
         enableDrag:true,
-        freeMove:true,
-        // swipeThreshold: 40,
+        freeMove:true
     });
     $("#last_posts_slider").lightSlider({
         item: 3,
         autoWidth: false,
         slideMove: 1, 
-        // slideMargin: 60,
         mode: "slide",
         useCSS: true,
         cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-        // easing: 'linear',
         controls: true,
         prevHtml: '&larr;',
         nextHtml: '&rarr;',
-        speed: 1000, //ms'
+        speed: 1000, 
         auto: false,
         loop: false,
         slideEndAnimation: !0,
@@ -81,8 +76,7 @@ $(document).ready(function() {
         gallery: false,
         enableTouch:true,
         enableDrag:true,
-        freeMove:true,
-        // swipeThreshold: 40,
+        freeMove:true
     });
 
 /* Видео */
@@ -98,8 +92,6 @@ $(".about_esoteric_title").click(function () {
 /*FAQ*/ 
 $('.faq_container').on('click', function(){
         var a = $('.faq_title span', this);
-        // $('.faq_title span').text('+');
-        // $('.faq_content').slideUp(500);
     if (a.text() == '+') {
         a.text('-');
         $('.faq_content',this).slideDown(500);
