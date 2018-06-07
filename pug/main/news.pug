@@ -2,7 +2,12 @@ section#news
     .container
         h3 Что нового
         .row
-            .col-md-4.col-sm-6.col-xs-12
+            .col-md-8.col-sm-12.first_new
+                a(href="javascript:void(0);",target="_blank")
+                    .news_video_container.main_nvc
+                        h4.about_esoteric_title Посиделки Онлайн с Василием Поповым 13 апреля 2018г
+                        img(src="img/news_pic_1.jpg", alt="Василий Попов об Эзотерике")
+            .col-md-4.col-sm-12
                 form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="_blank").main_form
                     h4.main_form_title Будьте в курсе!
                     p.main_form_subtitle Подпишитесь на наши новости, и получайте видео бонусы
@@ -15,11 +20,6 @@ section#news
                     .news_video_container.secondary_nvc
                         h4.about_esoteric_title Сенсационный проект Трансформация уже в открытом доступе! Решение проблем с помощью Экстрасенсов!
                         img(src="img/news_pic_2.jpg", alt="Василий Попов об Эзотерике")
-            .col-md-8.col-sm-6.col-xs-12
-                a(href="javascript:void(0);",target="_blank")
-                    .news_video_container.main_nvc
-                        h4.about_esoteric_title Посиделки Онлайн с Василием Поповым 13 апреля 2018г
-                        img(src="img/news_pic_1.jpg", alt="Василий Попов об Эзотерике")
         #news_soc_block
             .nsb_title
                 h4 Не пропустите самое интересное на Master Vision
