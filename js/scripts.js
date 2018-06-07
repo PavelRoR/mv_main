@@ -84,10 +84,7 @@ $("#about_eso_video_container ").click(function () {
     var a = $('.video_wrapper',this).attr("data-youtube");
     $('.video_wrapper',this).html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1"  class="video_testimonial" allowfullscreen></iframe>').css("z-index","19");
 });
-$(".about_esoteric_title").click(function () {
-    var a = $(this).next().attr("data-youtube");
-    $(this).next().html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1"  allowfullscreen></iframe>')
-});
+
 
 /*FAQ*/ 
 $('.faq_container').on('click', function(){
