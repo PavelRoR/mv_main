@@ -50,7 +50,24 @@ $(document).ready(function() {
         gallery: false,
         enableTouch:true,
         enableDrag:true,
-        freeMove:true
+        freeMove:true,
+        responsive : [
+            {
+                breakpoint:1200,
+                settings: {
+                    item:3,
+                    slideMove:1,
+                    slideMargin:6,
+                  }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                    item:2,
+                    slideMove:1
+                  }
+            }
+        ]
     });
     $("#last_posts_slider").lightSlider({
         item: 3,
