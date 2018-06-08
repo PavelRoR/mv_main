@@ -1,0 +1,46 @@
+section#number_generator
+	.container
+		table#number_generator_table
+			tbody
+				tr
+					td
+						a(href="javascript:vip(1);") 1
+					td
+						a(href="javascript:vip(2);") 2
+					td
+						a(href="javascript:vip(3);") 3
+				tr
+					td
+						a(href="javascript:vip(4);") 4
+					td
+						a(href="javascript:vip(5);") 5
+					td
+						a(href="javascript:vip(6);") 6
+				tr
+					td
+						a(href="javascript:vip(7);") 7
+					td
+						a(href="javascript:vip(8);") 8
+					td
+						a(href="javascript:vip(9);") 9
+		.single_container
+			.instruction
+				p Вы видите квадрат с девятью цифрами. Вам необходимо, с помощью интуиции, определить какое число было загадано программой.
+				p Если указанная Вами цифра совпадает с цифрой сгенерированной программой - Вы увидите зеленую надпись, в противном случае - красную
+				p Для большей достоверности результатов, сделайте больше 100 попыток.
+				p Для повышения рузультатов, обратите внимания на свои ощущения, на образы, мелькающие в голове, на звуки, вкусы и запахи, которые Вы можете видеть, слышать или чувствовать в себе.
+				p Все это может иметь значение, посредством ваших внутренних чувств, проявляется Ваша интуиция.
+			#numbers_result
+			#numbers_count
+			button.button#restart Начать сначала
+			.row.likeit
+				.col-md-7
+					h5 Понравилcя тест? Расскажите друзьям:
+				.col-md-5
+					script(type="text/javascript")
+						| (function () {if (window.pluso)if (typeof window.pluso.start == "function") return;if (window.ifpluso == undefined) {window.ifpluso = 1;var d = document,s = d.createElement('script'),g = 'getElementsByTagName';s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://share.pluso.ru/pluso-like.js';var h = d[g]('body')[0];h.appendChild(s);}})();
+					.pluso(data-background="transparent" data-options="big,round,line,horizontal,counter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,google,email")
+			h4.comments Комментарии
+			#hypercomments_widget
+				script
+					| type="text/javascript",_hcwp = window._hcwp || [];_hcwp.push({widget: "Stream",widget_id: 102348});(function() {if ("HC_LOAD_INIT" in window) return;HC_LOAD_INIT = true;var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();var hcc = document.createElement("script");hcc.type = "text/javascript";hcc.async = true;hcc.src = ("https:" == document.location.protocol ? "https" : "http") + "://w.hypercomments.com/widget/hc/102348/" + lang + "/widget.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hcc, s.nextSibling);})();
