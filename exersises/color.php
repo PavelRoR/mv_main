@@ -3,7 +3,7 @@
 Template Name: color
 */
 ?>
-<?php get_header() ?>
+<?php get_header() ?> 
 <section class="game">
 	<div class="container">
 		<h1>Тест "Угадывание цвета"</h1>

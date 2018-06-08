@@ -19,7 +19,7 @@ function vip(XX)
 	vvd.style.display="none";// Убирает текст
 	re.style.display="inline-block";// Добавляет кнопку
 	vsg++;
-	console.log(color);
+	console.log(color);  
 	if(XX==color)
 {
 das++;

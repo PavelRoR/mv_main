@@ -1,0 +1,36 @@
+#color_generator
+    padding: 90px 0
+#color_box
+    width 300px
+    height 300px
+    border: 1px solid #aaa
+    border-radius: 3px
+    margin 0 auto 20px
+    cursor pointer
+    &+p
+        font-family: 'HelveticaNeueCyrLight'
+        font-size: 16px
+        text-align: center
+        margin-bottom: 20px
+#cg_colors
+    width: 300px
+    height 100px
+    margin: 0 auto 30px
+    &> div
+            width: 31.7%
+            height 100px
+            border-radius: 3px
+            // width: 99px
+            display: inline-block
+            &:nth-child(2)
+                margin 0 3px
+            a
+                display block
+                height inherit
+                margin: 0 auto
+.cg_red
+    background-color: #ff0000
+.cg_green
+    background-color: #00ff00
+.cg_blue
+    background-color: #0000ff
