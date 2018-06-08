@@ -1,0 +1,44 @@
+#zener_cards
+    padding: 90px 0
+#zc_main_card
+    margin 0 auto 20px
+    background: black url(../img/zener/logo3.png) no-repeat center;
+    background-size: 85%
+    position: relative;
+    width: 150px;
+    height: 240px;
+    border-radius: 13px;
+    &:after
+        content: '';
+        position: absolute;
+        height: 97%;
+        width: 95%;
+        border: 2px solid white;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: 13px;
+#zc_cards
+    width: 600px;
+    min-height: 2px;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    a
+        background-size: cover;
+        width: 100px;
+        height: 160px;
+        margin: 0 10px;
+        display: block;
+        float: left;
+        &:nth-child(1)
+            background-image url(../img/zener/zen1.png)
+        &:nth-child(2)
+            background-image url(../img/zener/zen2.png)
+        &:nth-child(3)
+            background-image url(../img/zener/zen3.png)
+        &:nth-child(4)
+            background-image url(../img/zener/zen4.png)
+        &:nth-child(5)
+            background-image url(../img/zener/zen5.png)

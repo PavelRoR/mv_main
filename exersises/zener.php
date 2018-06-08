@@ -4,7 +4,7 @@ Template Name: zener
 */
 ?>
 <?php get_header() ?>
-
+ 
 <section class="game">
 	<div class="container">
 		<h1>Тест "Карты Зенера"</h1>

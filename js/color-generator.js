@@ -13,15 +13,15 @@ var blue = "#0000ff",
 function vip(XX) {
     var rand = Math.floor(Math.random() * col.length),
         color = (col[rand]),
-        ng_desc = $('.instruction'),
-        ng_results = $('#numbers_result'),
-        ng_count = $('#numbers_count'),
-        ng_restart = $('#restart');
+        cg_desc = $('.instruction'),
+        cg_results = $('#numbers_result'),
+        cg_count = $('#numbers_count'),
+        cg_restart = $('#restart');
     color_box.css("backgroundColor", color);
-    ng_desc.fadeOut(300);
-    ng_results.fadeIn(700);
-    ng_count.fadeIn(700);
-    ng_restart.css("display", "block");
+    cg_desc.fadeOut(300);
+    cg_results.fadeIn(700);
+    cg_count.fadeIn(700);
+    cg_restart.css("display", "block");
     vsg++;
     console.log(color);
     if (XX == color) {
@@ -72,8 +72,8 @@ function vip(XX) {
         }
         answer = "Нет, это был другой цвет";
     }
-    ng_results.html(answer);
-    ng_count.html('предсказано ' + prn + '% из ' + vsg + ' попыток ') + ur[pur];
+    cg_results.html(answer);
+    cg_count.html('предсказано ' + prn + '% из ' + vsg + ' попыток ') + ur[pur];
 }
 $(function () {
     $('#restart ').on('click', function () {

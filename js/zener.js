@@ -1,6 +1,6 @@
 var num = 0, prc = 0, correct = 0, pur = 0, prc = 0, circle = "url(http://mastervision.su/wp-content/themes/mastevision/img/zen1.png)", cross = "url(http://mastervision.su/wp-content/themes/mastevision/img/zen2.png)", waves = "url(http://mastervision.su/wp-content/themes/mastevision/img/zen3.png)", square = "url(http://mastervision.su/wp-content/themes/mastevision/img/zen4.png)", star = "url(http://mastervision.su/wp-content/themes/mastevision/img/zen5.png)", card;
 var ur = new Array();
-ur[0]="";
+ur[0]=""; 
 ur[1]="<br><br>Ваш уровень предсказаний значительно ниже, чем уровень случайного совпадения. Вам следует уделять больше времени для тренировки свей интуиции.";
 ur[2]="<br><br>Ваш уровень предсказаний ниже, чем уровень случайного совпадения. Уделите время для развития своей интуиции.";
 ur[3]="<br><br>Ваш уровень предсказаний близок к уровню случайного совпадения. Это все равно, что постоянно нажимать на один и тот же вариант ответа.";

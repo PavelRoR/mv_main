@@ -1,0 +1,29 @@
+section#zener_cards
+	.container
+		.single_container
+			#zc_main_card
+			#zc_cards
+				a(class="circle" href='javascript:vip(circle)')
+				a(class="cross" href='javascript:vip(cross)')
+				a(class="waves" href='javascript:vip(waves)')
+				a(class="square" href='javascript:vip(square)')
+				a( class="star" href='javascript:vip(star)')
+			.instruction
+				p Вы видите пять карт. Вам необходимо, с помощью интуиции, определить какой из этих цветов был загадан программой
+				p Правильный ответ появиться в поле, обведенном рамкой
+				p Для большей достоверности результатов, сделайте больше 100 попыток
+				p Для повышения рузультатов, обратите внимания на свои ощущения, на образы, мелькающие в голове, на звуки, вкусы и запахи, которые Вы можете видеть, слышать или чувствовать в себе
+				p Все это может иметь значение, посредством ваших внутренних чувств, проявляется Ваша интуиция
+			#numbers_count
+			button.button#restart Начать сначала
+		.row.likeit
+			.col-md-7
+				h5 Понравилcя тест? Расскажите друзьям:
+			.col-md-5
+				script(type="text/javascript")
+					| (function () {if (window.pluso)if (typeof window.pluso.start == "function") return;if (window.ifpluso == undefined) {window.ifpluso = 1;var d = document,s = d.createElement('script'),g = 'getElementsByTagName';s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://share.pluso.ru/pluso-like.js';var h = d[g]('body')[0];h.appendChild(s);}})();
+				.pluso(data-background="transparent" data-options="big,round,line,horizontal,counter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,google,email")
+		h4.comments Комментарии
+		#hypercomments_widget
+			script
+				| type="text/javascript",_hcwp = window._hcwp || [];_hcwp.push({widget: "Stream",widget_id: 102348});(function() {if ("HC_LOAD_INIT" in window) return;HC_LOAD_INIT = true;var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();var hcc = document.createElement("script");hcc.type = "text/javascript";hcc.async = true;hcc.src = ("https:" == document.location.protocol ? "https" : "http") + "://w.hypercomments.com/widget/hc/102348/" + lang + "/widget.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hcc, s.nextSibling);})();
