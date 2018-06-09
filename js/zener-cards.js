@@ -12,13 +12,13 @@ var num = 0,
     zc_desc = $('.instruction'),
     zc_count = $('#numbers_count'),
     zc_restart = $('#restart'),
-ur = new Array();
+    ur = new Array();
 ur[0] = "";
 card = [circle, cross, waves, square, star];
 
 function vip(XX) {
     var rand = Math.floor(Math.random() * card.length),
-    whichCard = (card[rand]);
+        whichCard = (card[rand]);
     mycard.css({
         "backgroundSize": "100%",
         "backgroundImage": whichCard

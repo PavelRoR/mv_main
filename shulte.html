@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="author" content="MasterVision"/>
-    <meta name="description" content="«MasterVision» | Упражнения"/>
+    <meta name="description" content="«MasterVision» | Таблица Шульте"/>
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
-    <title>«MasterVision» | Упражнения</title>
+    <title>«MasterVision» | Таблица Шульте</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
   </head>
-  <body id="exersises">
+  <body id="single_article">
     <header id="header">
       <div class="container">
         <div class="row">
@@ -33,37 +33,29 @@
           <li> <a href="contacts">Контакты</a></li>
           <li> <a href="javascript:void(0);">Личная консультация</a></li>
         </ul>
-        <h1 class="main_title">Упражнения на проверку и развитие экстрасенсорных способностей</h1>
-        <h2 class="main_subtitle">Мы восхищаемся людьми, которые могут видеть и чувствовать то, что для обычного человека является скрытым. А что, если Вы также обладаете такого плана способностями, но, не обладая информацией, даже не пытаетесь их развивать?</h2>
+        <h1 class="main_title">Упражнение "Таблица Шульце"</h1>
+        <h2 class="main_subtitle">Упражнение для развития внимания и скорости восприятия</h2>
       </div>
     </section>
-    <section id="exersises_list">
+    <section id="shulte">
       <div class="container">
-        <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 exersise_col"><a class="lp_single" href="/mv_main/number-generator"><img class="lp_thumbnail" src="img/ex_1.jpg" alt="Упражнение &quot;Генератор чисел&quot;"/>
-                  <div class="lp_about">
-                    <h4 class="lp_title">Упражнение &quot;Генератор чисел&quot;</h4>
-                    <p>Тест на проверку и развитие экстрасенсорных способностей</p>
-                  </div>
-                  <div class="button lp_button">Начать упражнение</div></a></div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 exersise_col"><a class="lp_single" href="/mv_main/shulte"><img class="lp_thumbnail" src="img/ex_2.jpg" alt="Упражнение &quot;Таблица Шульте&quot;"/>
-                  <div class="lp_about">
-                    <h4 class="lp_title">Упражнение &quot;Таблица Шульте&quot;</h4>
-                    <p>Упражнение для развития внимания и скорости восприятия</p>
-                  </div>
-                  <div class="button lp_button">Начать упражнение</div></a></div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 exersise_col"><a class="lp_single" href="/mv_main/color-generator"><img class="lp_thumbnail" src="img/ex_3.jpg" alt="Упражнение &quot;Генератор цвета&quot;"/>
-                  <div class="lp_about">
-                    <h4 class="lp_title">Упражнение &quot;Генератор цвета&quot;</h4>
-                    <p>Тест на проверку и развитие экстрасенсорных способностей</p>
-                  </div>
-                  <div class="button lp_button">Начать упражнение</div></a></div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 exersise_col"><a class="lp_single" href="/mv_main/zener-cards"><img class="lp_thumbnail" src="img/ex_4.jpg" alt="Упражнение &quot;Карты Зенера&quot;"/>
-                  <div class="lp_about">
-                    <h4 class="lp_title">Упражнение &quot;Карты Зенера&quot;</h4>
-                    <p>Тест на проверку и развитие экстрасенсорных способностей</p>
-                  </div>
-                  <div class="button lp_button">Начать упражнение</div></a></div>
+        <div class="single_container instruction">
+          <p>Это упражнение помогает натренировать внимание. Внимание важно во всех аспектах жизни, в то числе и в эзотерически, экстрасенсорных практиках</p>
+          <p>При каждодневной тренировке (если подобных тренеровок прежде не было), на протяжении 2-3 недель, Вы заметите что концентрация Вашего внимание возрасла, станете меньше отвлекаться от важных процессов, начнете замечать в разы больше</p>
+          <p>Правила выполнения упражнения:</p>
+          <ul>
+            <li>Сядьте перед экраном компьютера таким образом, чтобы вся таблица была в поле вашего зрения</li>
+            <li>Зафиксируйте свое внимание в центре таблицы и старайтесь не смещать его</li>
+            <li>Переферийным зрением начните находить числа в возрастающем порядке, от 1 и до 25</li>
+          </ul>
+        </div>
+        <div id="shulte_box">
+          <div id="sh_controls">
+            <p class="create_table_title">Создать таблицу 5x5</p><a class="button createTable" href="javascript:vip(5);">Создать</a>
+            <p class="create_table_title">Создать таблицу 6x6</p><a class="button createTable" href="javascript:vip(6);">Создать</a>
+            <p class="create_table_title">Создать таблицу 7x7</p><a class="button createTable" href="javascript:vip(7);">Создать</a><a class="button" id="clearTable" href="javascript:void(0);">Обнулить</a>
+          </div>
+          <div id="shulteTable"></div>
         </div>
       </div>
     </section>
@@ -146,8 +138,7 @@
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/lightslider.min.js"></script>
-    <script src="js/scripts.js"></script><!--Yandex.Metrika counter-->
+    <script src="js/shulte.js"></script><!--Yandex.Metrika counter-->
     <!--script| (function(d, w, c) {(w[c] = w[c] || []).push(function() {try {w.yaCounter35450015 = new Ya.Metrika({id: 35450015,clickmap: true,trackLinks: true,accurateTrackBounce: true,webvisor: true});} catch (e) {}});var n = d.getElementsByTagName("script")[0],s = d.createElement("script"),f = function() {n.parentNode.insertBefore(s, n);};s.type = "text/javascript";s.async = true;s.src = "https://mc.yandex.ru/metrika/watch.js";if (w.opera == "[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else {f();}})(document, window, "yandex_metrika_callbacks");
     -->
     <!--noscript

@@ -1,15 +1,16 @@
 var ur = new Array(),
- cht = Math.floor(Math.random() * 9) + 1; //Рандомит
+	cht = Math.floor(Math.random() * 9) + 1;
 answer = "";
 das = 0;
 vsg = 0;
 pur = 0;
+
 function vip(XX) {
 	var ng_desc = $('.instruction'),
-	ng_results = $('#numbers_result'),
-	ng_count = $('#numbers_count'),
-	ng_restart = $('#restart'),
-	it_was = ' это было число ' + cht;
+		ng_results = $('#numbers_result'),
+		ng_count = $('#numbers_count'),
+		ng_restart = $('#restart'),
+		it_was = ' это было число ' + cht;
 	ng_desc.fadeOut(300);
 	ng_results.fadeIn(700);
 	ng_count.fadeIn(700);
@@ -17,7 +18,7 @@ function vip(XX) {
 
 	vsg++;
 	if (XX == cht) {
-		cht = Math.floor(Math.random() * 9) + 1; //Рандомит
+		cht = Math.floor(Math.random() * 9) + 1;
 		console.log(cht);
 		das++;
 		prn = Math.round(das / vsg * 1000) / 10;
@@ -42,9 +43,9 @@ function vip(XX) {
 			}
 		}
 		answer = "Да,";
-		ng_results.css("color","#00ff00"); 
+		ng_results.css("color", "#00ff00");
 	} else {
-		cht = Math.floor(Math.random() * 9) + 1; //Рандомит
+		cht = Math.floor(Math.random() * 9) + 1;
 		console.log(cht);
 		prn = Math.round(das / vsg * 1000) / 10;
 		if (vsg > 50) {
@@ -68,12 +69,12 @@ function vip(XX) {
 			}
 		}
 		answer = "Нет,";
-		ng_results.css("color","#ff0000"); 
+		ng_results.css("color", "#ff0000");
 	}
 	ng_results.html(answer + it_was);
-	ng_count.html('предсказано ' + prn + '% из ' + vsg + ' попыток ')+ ur[pur];
-}
+	ng_count.html('предсказано ' + prn + '% из ' + vsg + ' попыток ') + ur[pur];
+};
 
 $('#restart ').on('click', function () {
 	location.reload(true);
-})
+});
