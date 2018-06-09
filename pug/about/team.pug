@@ -1,9 +1,9 @@
-mixin coach(h5,p, m_modal)
-        .team_card(data-toggle="modal" data-target="#alexModal")
+mixin coach(h5,p, m_modal, src)
+        .team_card(data-toggle="modal" data-target= m_modal)
             h5= h5
             p= p
             .arrow_more &rarr;
-            .coach
+            img.coach(src= src alt= h5)
 section#our_team
     .container
         h3 Наша команда
@@ -11,22 +11,24 @@ section#our_team
         h4 Организаторы
         .row
             .col-md-6.col-sm-6.organizers
-                +coach('Александр Кудряшов','генеральный директор MasterVision', '#alexModal')
+                +coach('Александр Кудряшов','генеральный директор MasterVision', '#alexModal', 'img/alex.jpg')
             .col-md-6.col-sm-6.organizers
-                +coach('Андрей Грудин','управляющий партнер MasterVision', '#alexModal')
+                +coach('Андрей Грудин','управляющий партнер MasterVision', '#andreyModal', 'img/andrey.jpg')
         h4 Тренерский состав
         .row
             .col-md-6.col-sm-6.coaches
-                +coach('Василий Попов','эзотерик, мистик, целитель', '#alexModal')
+                +coach('Василий Попов','эзотерик, мистик, целитель', '#basileModal', '/img/basile.jpg')
             .col-md-6.col-sm-6.coaches
-                +coach('Ольга веда','потомственная волшебница в III поколении', '#alexModal')
+                +coach('Ольга Веда','потомственная волшебница в III поколении', '#vedaModal', 'img/veda.jpg')
             .col-md-6.col-sm-6.coaches
-                +coach('Жанна Абрамова','психолог, женский тренер', '#alexModal')
+                +coach('Жанна Абрамова','психолог, женский тренер', '#jannaModal', 'img/janna.jpg')
             .col-md-6.col-sm-6.coaches
-                +coach('Виктор Толстиков','эзотерик, потомственный маг', '#alexModal')
+                +coach('Виктор Толстиков','эзотерик, потомственный маг', '#victorModal', 'img/victor.jpg')
             .col-md-6.col-sm-6.coaches
-                +coach('Александр Кудряшов','экстрасенс, парапсихолог, мастер Расстановок по Хелленгеру', '#alexModal')
+                +coach('Александр Кудряшов','экстрасенс, парапсихолог, мастер Расстановок по Хелленгеру', '#alexModal', 'img/alex.jpg')
             .col-md-6.col-sm-6.coaches
-                +coach('Регина Крашенинникова','пальмистр, хиромант', '#alexModal')
+                +coach('Регина Крашенинникова','пальмистр, хиромант', '#reginaModal', 'img/regina.jpg')
+            .col-md-6.col-sm-6.coaches
+                +coach('Лидия Хелль','астролог', '#lidiaModal', 'img/lidia.jpg')
         //- h6 Приглашаем к сотрудничеству!
         //- a.button(href="/coaching-for-coaches/" target="_blank") Партнерская программ
