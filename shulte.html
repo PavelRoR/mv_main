@@ -50,12 +50,30 @@
           </ul>
         </div>
         <div id="shulte_box">
-          <div id="sh_controls">
-            <p class="create_table_title">Создать таблицу 5x5</p><a class="button createTable" href="javascript:vip(5);">Создать</a>
-            <p class="create_table_title">Создать таблицу 6x6</p><a class="button createTable" href="javascript:vip(6);">Создать</a>
-            <p class="create_table_title">Создать таблицу 7x7</p><a class="button createTable" href="javascript:vip(7);">Создать</a><a class="button" id="clearTable" href="javascript:void(0);">Обнулить</a>
-          </div>
-          <div id="shulteTable"></div>
+          <table id="shulte_create">
+            <tbody>
+              <tr>
+                <td>
+                  <p class="create_table_title">Создать таблицу 5x5</p><a class="button create_table" href="javascript:vip(5);">Создать</a>
+                </td>
+                <td>
+                  <p class="create_table_title">Создать таблицу 6x6</p><a class="button create_table" href="javascript:vip(6);">Создать</a>
+                </td>
+                <td>
+                  <p class="create_table_title">Создать таблицу 7x7</p><a class="button create_table" href="javascript:vip(7);">Создать</a>
+                </td>
+                <td>
+                  <p class="create_table_title">Очистить таблицу</p><a class="button create_table" id="clear_table" href="javascript:void(0);">Очистить</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <form id="shulte_cintrols" name="shuteControls">
+            <input id="shulte_timer" name="stopwatch" value="00:00:00.00"/>
+            <input class="button" id="start_timer" type="button" value="Запуск/Стоп"/>
+            <input class="button" id="clear_timer" type="button" value="Обнулить"/>
+          </form>
+          <div id="shulte_table"></div>
         </div>
       </div>
     </section>

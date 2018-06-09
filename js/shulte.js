@@ -1,55 +1,54 @@
     function vip(XX) {
-        $('#shulteTable table').remove();
-        $('a',this).text('Создать другую таблицу');
+        $('#shulte_table table, #shulte_table h4').remove();
+        $('a', this).text('Создать другую таблицу');
         var a = [];
-        for (var i = 1; i <= XX*XX; i++)
+        for (var i = 1; i <= XX * XX; i++)
             a.push(i);
         a.sort(() => Math.random() - 0.5);
         var table = $('<table id="game_table">');
-        table.empty();
+        // table.empty();
         var index = 0;
         for (r = 0; r < XX; ++r) {
             var rows = $('<tr>');
             for (c = 0; c < XX; ++c) {
-                rows.append('<td>' + a[index++] );
+                rows.append('<td>' + a[index++]);
 
             }
             table.append(rows);
         }
-        $('#shulteTable').append(table);
+        $('#shulte_table').append(table).prepend("<h4>Таблица " + XX + "x" + XX + "</h4>");
     };
 
     $(function () {
-       $('#clearTable').click(function () {
-           $('#game_table td').text('');
-       })
+        $('#clear_table').click(function () {
+            $('#game_table td').text('');
+        })
+    });
+    $(function () {
+        $('#start_timer').click(function () {
+            pause()
+        })
+    });
+    $(function () {
+        $('#clear_timer').click(function () {
+            clearСlock()
+        })
     });
 
+    var base = 60,
+        clocktimer, dateObj, dh, dm, ds, ms,
+        readout = '',
+        h = 1,
+        m = 1,
+        tm = 1,
+        s = 0,
+        ts = 0,
+        ms = 0,
+        show = true,
+        init = 0,
+        ii = 0;
 
-
-
-
-
-
-
-
-
-
-
-    var base = 60;
-    var clocktimer, dateObj, dh, dm, ds, ms;
-    var readout = '';
-    var h = 1;
-    var m = 1;
-    var tm = 1;
-    var s = 0;
-    var ts = 0;
-    var ms = 0;
-    var show = true;
-    var init = 0;
-    var ii = 0;
-
-    function clearALL() {
+    function clearСlock() {
         clearTimeout(clocktimer);
         h = 1;
         m = 1;
@@ -60,19 +59,16 @@
         init = 0;
         show = true;
         readout = '00:00:00.00';
-        document.clockform.clock.value = readout;
-        var CF = document.clockform;
+        $('#shulte_timer').val(readout);
         ii = 0;
     }
 
     function startTIME() {
         var cdateObj = new Date();
         var t = (cdateObj.getTime() - dateObj.getTime()) - (s * 1000);
-
         if (t > 999) {
             s++;
         }
-
         if (s >= (m * base)) {
             ts = 0;
             m++;
@@ -82,7 +78,6 @@
                 ts = ts - ((m - 1) * base);
             }
         }
-
         if (m > (h * base)) {
             tm = 1;
             h++;
@@ -92,7 +87,6 @@
                 tm = tm - ((h - 1) * base);
             }
         }
-
         ms = Math.round(t / 10);
         if (ms > 99) {
             ms = 0;
@@ -103,7 +97,6 @@
         if (ms > 0 && ms <= 9) {
             ms = '0' + ms;
         }
-
         if (ts > 0) {
             ds = ts;
             if (ts < 10) {
@@ -128,16 +121,14 @@
         } else {
             dh = '00';
         }
-
         readout = dh + ':' + dm + ':' + ds + '.' + ms;
         if (show == true) {
-            document.clockform.clock.value = readout;
+            $('#shulte_timer').val(readout);
         }
-
         clocktimer = setTimeout("startTIME()", 1);
     }
 
-    function findTIME() {
+    function pause() {
         if (init == 0) {
             dateObj = new Date();
             startTIME();
@@ -149,4 +140,4 @@
                 show = true;
             }
         }
-    };
+    }

@@ -9,12 +9,23 @@ section#shulte
 				li Зафиксируйте свое внимание в центре таблицы и старайтесь не смещать его
 				li Переферийным зрением начните находить числа в возрастающем порядке, от 1 и до 25
 		#shulte_box
-			#sh_controls
-				p.create_table_title Создать таблицу 5x5
-				a.button.createTable(href="javascript:vip(5);") Создать
-				p.create_table_title Создать таблицу 6x6
-				a.button.createTable(href="javascript:vip(6);") Создать
-				p.create_table_title Создать таблицу 7x7
-				a.button.createTable(href="javascript:vip(7);") Создать
-				a.button#clearTable(href="javascript:void(0);") Обнулить
-			#shulteTable
+			table#shulte_create
+				tbody
+					tr
+						td
+							p.create_table_title Создать таблицу 5x5
+							a.button.create_table(href="javascript:vip(5);") Создать
+						td
+							p.create_table_title Создать таблицу 6x6
+							a.button.create_table(href="javascript:vip(6);") Создать
+						td
+							p.create_table_title Создать таблицу 7x7
+							a.button.create_table(href="javascript:vip(7);") Создать
+						td
+							p.create_table_title Очистить таблицу
+							a.button.create_table#clear_table(href="javascript:void(0);") Очистить
+			form#shulte_cintrols(name="shuteControls")
+				input#shulte_timer(name="stopwatch"  value="00:00:00.00")
+				input.button#start_timer(type="button" value="Запуск/Стоп")
+				input.button#clear_timer(type="button" value="Обнулить")
+			#shulte_table
