@@ -168,16 +168,10 @@ $(document).ready(function () {
                     left: "-999px",
                     transition: "all .65s ease-in-out"
                 });
-                $("#main_menu li a").click(function () {
-                    $("#menu").css({
-                        left: "-999px",
-                        transition: "all .5s ease-in"
-                    });
                     $("#menu_icon").delay(300).removeClass("clicked");
                     $(".upper_span").removeClass("upper_span_opened");
                     $(".middle_span").removeClass("middle_span_opened");
                     $(".lower_span").removeClass("lower_span_opened")
-                });
             }
         });
     });
