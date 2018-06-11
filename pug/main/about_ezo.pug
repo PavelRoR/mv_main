@@ -12,11 +12,16 @@ section#about_esoteric
                 form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="_blank").main_form
                     h4.main_form_title Начните обучение бесплатно!
                     p.main_form_subtitle Получите подборку обучающих материалов по эзотерике!
+                    p.alert_message
                     input(value="1" name="required_fields[email]" type="hidden")
                     input(class="main_form_email" maxlength="255" name="Contact[email]" placeholder="Ваш E-mail")
                     button(type="submit" ).main_form_button Получить материалы
                     input(value="65" name="Contact[id_newsletter]" type="hidden")
                     input(value="0" name="Contact[id_advertising_channel_page]" type="hidden")
+                    .checking
+                        input(type="checkbox" id="check_1" checked).check
+                        label(for="check_1").check_label Я согласен с условиями обработки 
+                            a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  персональных данных
                 #students_num
                     h5 В Master Vision обучилось более
                     p 1 800

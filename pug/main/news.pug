@@ -16,6 +16,10 @@ section#news
                     button(type="submit" ).main_form_button Получить материалы
                     input(value="65" name="Contact[id_newsletter]" type="hidden")
                     input(value="0" name="Contact[id_advertising_channel_page]" type="hidden")
+                    .checking
+                        input(type="checkbox" id="check_2" checked).check
+                        label(for="check_2").check_label Я согласен с условиями обработки 
+                            a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  персональных данных
                 a(href="javascript:void(0);",target="_blank")
                     .news_video_container.secondary_nvc
                         h4.about_esoteric_title Сенсационный проект Трансформация уже в открытом доступе! Решение проблем с помощью Экстрасенсов!
