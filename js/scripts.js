@@ -119,11 +119,11 @@ $(document).ready(function () {
             email = $('.main_form_email', this),
             button = $('.main_form_button', this);
 
-            $("body").on("submit", ".main_form", function () {
-                let check = $('.check', this),
-                    reNone = /.+/,
-                    email = $('.main_form_email', this),
-                    button = $('.main_form_button', this);
+        $("body").on("submit", ".main_form", function () {
+            let check = $('.check', this),
+                reNone = /.+/,
+                email = $('.main_form_email', this),
+                button = $('.main_form_button', this);
             if (!email.val().match(reNone)) {
                 email.css("border", "1px solid red");
                 button.text('Введите email');
@@ -148,6 +148,50 @@ $(document).ready(function () {
             button.text('Получить материалы');
         });
     });
+    $(function () {
+        $("#menu_icon").on("click", function () {
+            if (!$(this).hasClass("clicked")) {
+                $(this).addClass("clicked");
+                $(".upper_span").addClass("upper_span_opened");
+                $(".middle_span").addClass("middle_span_opened");
+                $(".lower_span").addClass("lower_span_opened");
+                $("#menu_container").delay(300).css({
+                    left: "0",
+                    transition: "all .65s ease-out"
+                })
+            } else {
+                $(this).delay(300).removeClass("clicked");
+                $(".upper_span").removeClass("upper_span_opened");
+                $(".middle_span").removeClass("middle_span_opened");
+                $(".lower_span").removeClass("lower_span_opened");
+                $("#menu_container").css({
+                    left: "-999px",
+                    transition: "all .65s ease-in-out"
+                });
+                $("#main_menu li a").click(function () {
+                    $("#menu").css({
+                        left: "-999px",
+                        transition: "all .5s ease-in"
+                    });
+                    $("#menu_icon").delay(300).removeClass("clicked");
+                    $(".upper_span").removeClass("upper_span_opened");
+                    $(".middle_span").removeClass("middle_span_opened");
+                    $(".lower_span").removeClass("lower_span_opened")
+                });
+            }
+        });
+    });
+    $(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() >= 100) {
 
+					$("#menu_icon").css({"position": "fixed", "top": "33px"});
+				
+			} else {
+				$("#menu_icon").css({"position": "absolute", "top": "0"});
+			
+			}
+		})
+	})
     /*Конец документа*/
 });

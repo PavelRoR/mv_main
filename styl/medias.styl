@@ -365,8 +365,6 @@
         width 90%
 @media screen and (max-width 991px)
     .contacts
-        width: 315px
-        float left
         text-align: center
     .soc_buttons
         float: right
@@ -443,4 +441,31 @@
         height: 50px;
         width: 50px;
         font-size: 26px
-// @media screen and (max-width 767px)
+@media screen and (max-width 767px)
+    #menu_container
+        width: 250px
+        height 100vh
+        position: fixed
+        top 0
+        left -999px
+        background-color: rgba(#f7f8fa, .96)
+        z-index: 999
+        padding: 20px
+        box-shadow: 0 5px 8px rgba(0,0,0,.25)
+    #main_menu
+        max-width 100%
+        margin-bottom: 20px
+        li
+            display block
+            margin-bottom: 10px
+            a
+                color: #4543fb
+                
+
+    .pc_button
+        position: static
+        background-color: #4543fb
+        color: #fff
+    .stickytop
+        position: fixed
+        top: 33px
