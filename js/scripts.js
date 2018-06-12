@@ -35,7 +35,7 @@ $(document).ready(function () {
             });
             $("#cir_slider").lightSlider({
                 item: 3,
-                autoWidth: true,
+                autoWidth: false,
                 slideMove: 1,
                 mode: "slide",
                 useCSS: true,
@@ -51,13 +51,19 @@ $(document).ready(function () {
                 pauseOnHover: true,
                 keyPress: false,
                 rtl: false,
-                adaptiveHeight: true,
+                adaptiveHeight: false,
                 vertical: false,
                 pager: false,
                 gallery: false,
                 enableTouch: true,
                 enableDrag: true,
-                freeMove: true
+                freeMove: true,
+                responsive: [{
+                    breakpoint: 481,
+                    settings: {
+                        item: 2,
+                    }
+                }]
             });
             $("#last_posts_slider").lightSlider({
                 item: 3,
@@ -83,15 +89,25 @@ $(document).ready(function () {
                 gallery: false,
                 enableTouch: true,
                 enableDrag: true,
-                freeMove: true
+                freeMove: true,
+                responsive: [{
+                    breakpoint: 481,
+                    settings: {
+                        item: 2,
+                    }
+                }]
             });
 
             /* Видео */
-            $("#about_eso_video_container ").click(function () {
-                var a = $('.video_wrapper', this).attr("data-youtube");
-                $('.video_wrapper', this).html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1"  class="video_testimonial" allowfullscreen></iframe>').css("z-index", "19");
+            $(function () {
+                
+                $("#about_eso_video_container ").click(function () {
+                    var a = $('.video_wrapper', this).attr("data-youtube");
+                    $('.video_wrapper', this).html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1"  class="video_testimonial" allowfullscreen></iframe>').css("z-index", "19");
+                    $(this).children('.about_esoteric_title').hide();
+                });
             });
-
+                
 
             /*FAQ*/
             $(function () {
