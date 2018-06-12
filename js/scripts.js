@@ -106,6 +106,7 @@ $(document).ready(function () {
 
                     }
                 });
+                });
                 $(function () {
                     var check = $('.check', this),
                         email = $('.main_form_email', this),
@@ -184,6 +185,6 @@ $(document).ready(function () {
 
                         }
                     })
-                })
+                });
                 /*Конец документа*/
             });
