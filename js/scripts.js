@@ -12,6 +12,7 @@ $(document).ready(function () {
         speed: 2000,
         auto: true,
         loop: true,
+        pager: true,
         slideEndAnimation: false,
         pause: 5000,
         pauseOnHover: true,
@@ -19,12 +20,20 @@ $(document).ready(function () {
         rtl: false,
         adaptiveHeight: true,
         vertical: false,
-        pager: false,
         gallery: false,
         enableTouch: true,
         enableDrag: true,
         freeMove: true,
         swipeThreshold: 40,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                item: 1,
+                slideMove: 1
+            }
+        }
+    ]
     });
     $("#cir_slider").lightSlider({
         item: 3,
@@ -50,23 +59,7 @@ $(document).ready(function () {
         gallery: false,
         enableTouch: true,
         enableDrag: true,
-        freeMove: true,
-        responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    item: 3,
-                    slideMove: 1,
-                    slideMargin: 6,
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    item: 2,
-                    slideMove: 1
-                }
-            }
-        ]
+        freeMove: true
     });
     $("#last_posts_slider").lightSlider({
         item: 3,
