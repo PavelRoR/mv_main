@@ -1,4 +1,4 @@
-
+$(document).ready(function () {
     $("#main_slider").lightSlider({
         item: 2,
         autoWidth: false,
@@ -221,3 +221,4 @@
         })
     });
     /*Конец документа*/
+});
