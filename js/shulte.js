@@ -4,9 +4,10 @@
         var a = [];
         for (var i = 1; i <= XX * XX; i++)
             a.push(i);
-        a.sort(() => Math.random() - 0.5);
+            a.sort(function() { return Math.random() - 0.5; });
+            // console.log(JSON.stringify(a));
         var table = $('<table id="game_table">');
-        // table.empty();
+        table.empty();
         var index = 0;
         for (r = 0; r < XX; ++r) {
             var rows = $('<tr>');

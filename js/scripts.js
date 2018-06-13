@@ -1,4 +1,6 @@
-$(document).ready(function () {
+$(function () {
+    
+
     $("#main_slider").lightSlider({
         item: 2,
         autoWidth: false,
@@ -97,7 +99,7 @@ $(document).ready(function () {
             }
         }]
     });
-
+});
     /* Видео */
     $(function () {
 
@@ -107,8 +109,6 @@ $(document).ready(function () {
             $(this).children('.about_esoteric_title').hide();
         });
     });
-
-
     /*FAQ*/
     $(function () {
         $('.faq_container').on('click', function () {
@@ -220,5 +220,3 @@ $(document).ready(function () {
             }
         })
     });
-    /*Конец документа*/
-});
