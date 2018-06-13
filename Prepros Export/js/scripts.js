@@ -129,7 +129,7 @@ $(document).ready(function () {
             button = $('.main_form_button', this);
 
         $("body").on("submit", ".main_form", function () {
-            let check = $('.check', this),
+            var check = $('.check', this),
                 reNone = /.+/,
                 email = $('.main_form_email', this),
                 button = $('.main_form_button', this);
