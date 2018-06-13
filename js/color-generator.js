@@ -114,13 +114,37 @@ $(function () {
 });
 $(function () {
     $(window).scroll(function () {
-        if ($(this).scrollTop() >= 100) {
+        if ($('body').width() < 768) {
+            if ($(this).scrollTop() >= 150) {
 
-                $("#menu_icon").css({"position": "fixed", "top": "33px"});
-            
-        } else {
-            $("#menu_icon").css({"position": "absolute", "top": "0"});
-        
+                $("#menu_icon").css({
+                    "position": "fixed",
+                    "top": "33px"
+                });
+
+            } else {
+                $("#menu_icon").css({
+                    "position": "absolute",
+                    "top": "0"
+                });
+
+            }
+        }
+        if ($('body').width() < 379) {
+            if ($(this).scrollTop() >= 60) {
+
+                $("#menu_icon").css({
+                    "position": "fixed",
+                    "top": "33px"
+                });
+
+            } else {
+                $("#menu_icon").css({
+                    "position": "absolute",
+                    "top": "-140px"
+                });
+
+            }
         }
     })
-})
+});

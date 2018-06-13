@@ -101,6 +101,10 @@ footer#footer
 						button(type="submit" ).main_form_button Получить материалы
 						input(value="65" name="Contact[id_newsletter]" type="hidden")
 						input(value="0" name="Contact[id_advertising_channel_page]" type="hidden")
+						.checking
+							input(type="checkbox" id="check_1" checked).check
+							label(for="check_1").check_label Я согласен с условиями обработки 
+								a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  персональных данных
 include modals/alex
 include modals/andrey
 include modals/basile
