@@ -1,4 +1,4 @@
-$(document).ready(function () {
+
     $("#main_slider").lightSlider({
         item: 2,
         autoWidth: false,
@@ -99,14 +99,18 @@ $(document).ready(function () {
     });
 
     /* Видео */
-
+    $(function () {
 
         $("#about_eso_video_container ").click(function () {
             var a = $('.video_wrapper', this).attr("data-youtube");
             $('.video_wrapper', this).html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1"  class="video_testimonial" allowfullscreen></iframe>').css("z-index", "19");
             $(this).children('.about_esoteric_title').hide();
         });
+    });
 
+
+    /*FAQ*/
+    $(function () {
         $('.faq_container').on('click', function () {
             var a = $('.faq_title span', this);
             if (a.text() == '+') {
@@ -118,7 +122,8 @@ $(document).ready(function () {
 
             }
         });
-
+    });
+    $(function () {
         var check = $('.check', this),
             email = $('.main_form_email', this),
             button = $('.main_form_button', this);
@@ -151,7 +156,8 @@ $(document).ready(function () {
             check.next().css("color", "rgba(17, 17, 18, .8)");
             button.text('Получить материалы');
         });
-
+    });
+    $(function () {
         $("#menu_icon").on("click", function () {
             if (!$(this).hasClass("clicked")) {
                 $(this).addClass("clicked");
@@ -177,7 +183,8 @@ $(document).ready(function () {
                 $(".lower_span").removeClass("lower_span_opened")
             }
         });
-
+    });
+    $(function () {
         $(window).scroll(function () {
             if ($('body').width() < 768) {
                 if ($(this).scrollTop() >= 150) {
@@ -212,6 +219,5 @@ $(document).ready(function () {
                 }
             }
         })
-
+    });
     /*Конец документа*/
-});
