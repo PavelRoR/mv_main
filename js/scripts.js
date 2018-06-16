@@ -186,7 +186,7 @@ $(document).ready(function () {
     });
     $(function () {
         $(window).scroll(function () {
-            if ($('body').width() < 768) {
+            if ($('body').width() < 992) {
                 if ($(this).scrollTop() >= 150) {
 
                     $("#menu_icon").css({

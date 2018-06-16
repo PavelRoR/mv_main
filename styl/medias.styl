@@ -126,7 +126,7 @@
 		line-height: 54px;
 		font-size: 30px;
 	.all_posts
-		margin-top: 130px
+		margin-top: 200px
 		font-size: 18px
 		line-height: 47px
 	.lp_single
@@ -170,6 +170,7 @@
 		font-size: 18px
 		right: 30px;
 		margin: 0 auto;
+		height 69px
 	.articles_pagination li a
 		font-size: 28px;
 		width: 60px;
@@ -286,7 +287,8 @@
 		font-size: 26px
 	#myPolitics .modal-title
 		font-size: 34px
-
+	#last_posts .lSAction
+		top: 160px
 @media screen and (max-width 1199px)
 	.contacts a
 		&:nth-child(2)
@@ -337,6 +339,7 @@
 		padding: 30px
 	.secondary_nvc h4
 		font-size: 18px
+		line-height: 1.2
 	.secondary_nvc
 		overflow hidden
 		height 215px
@@ -371,6 +374,7 @@
 		text-align: center
 	.soc_buttons
 		float: right
+		width: 180px
 	.contacts a
 		margin-right: 0
 	#main_menu
@@ -406,7 +410,9 @@
 		.why_par
 			font-size: 18px
 	.wy_wrapper:nth-child(5) .wy_container
-		width: 345px
+		width: 100%
+		height auto
+		min-height 300px
 		margin 30px auto 0
 	.first_new
 		float: none
@@ -415,7 +421,7 @@
 		font-size: 27px
 	.all_posts
 		width: 100%
-		margin-top: 120px
+		margin-top: 180px
 	#documents_n_soc .soc_buttons
 		margin-top: 15px
 		float: none
@@ -431,7 +437,7 @@
 			width: auto;
 			top: auto;
 			bottom: -15px;
-			height: 70%;
+			height: 76%;
 			background-size: contain;
 			right: -10px;
 			left: auto;
@@ -446,21 +452,6 @@
 		font-size: 26px
 	.main_form_in_news
 		margin 0
-@media screen and (max-width 767px)
-	#head_logo
-		display block
-		margin 0 auto
-	.contacts
-		margin 10px 0
-		a
-			text-align: center
-			line-height: 1.2
-			&:nth-child(2)
-				margin 0 10px
-	.soc_buttons
-		width: 175px
-		margin 0 auto
-		float: none
 	#menu_icon
 		display block
 	#menu_container
@@ -488,6 +479,25 @@
 	.stickytop
 		position: fixed
 		top: 33px
+	.close
+		left 30px
+		right auto
+@media screen and (max-width 767px)
+	#head_logo
+		display block
+		margin 0 auto
+	.contacts
+		margin 10px 0
+		a
+			text-align: center
+			line-height: 1.2
+			&:nth-child(2)
+				margin 0 10px
+	.soc_buttons
+		width: 175px
+		margin 0 auto
+		float: none
+
 	#courses_in_record
 		padding-top: 50px
 	.title_an_rules h3
@@ -512,6 +522,8 @@
 		float: none
 		width: 450px
 		margin: 0 auto 20px
+	.wy_wrapper:nth-child(5) .wy_container
+		min-height auto
 	.secondary_nvc
 		width: 100%
 		float: none
@@ -589,9 +601,7 @@
 	.team_card
 		width: 450px
 		margin: 0 auto 20px
-	.close
-		left 30px
-		right auto
+
 	#footer
 		padding: 40px 0
 	.secondary_nvc::after
@@ -621,7 +631,7 @@
 	.title_block h5 + p
 		width: 50%
 	.title_block img
-		width 230px
+		width 285px
 		height auto
 	#footer_contacts .contacts a
 	#contacts_list .contacts a
@@ -694,7 +704,7 @@
 		padding-bottom: 30px
 	#exersises_list .lp_single
 	#articles_list .article_col .lp_single
-		width: 250px !important
+		width: 300px !important
 		height: auto
 		padding-bottom: 30px
 	#exersises_list .lp_button
@@ -728,7 +738,7 @@
 	#modalSubscribe .modal-dialog
 		width: 90%
 	.team_card
-		width: 260px
+		width: 300px
 		padding  20px 
 		height 400px
 	.team_card .arrow_more
@@ -747,6 +757,8 @@
 		margin-bottom: 20px
 	.likeit
 		margin: 30px auto
+	.title_block img
+		width: 250px
 @media screen and (max-width 426px)
 	.main_title
 		font-size: 32px
@@ -937,7 +949,6 @@
 	#head_logo
 	.soc_buttons
 		margin-left: 0
-
 	.contacts
 		text-align: left
 		a
@@ -1017,14 +1028,20 @@
 			margin-bottom: 0
 	.team_card
 		width: 250px
+	.team_card .coach
+		height : 67%
 	.title_block
 		padding: 80px 20px 0
 	.title_block img
-		width: 190px
+		width: 210px
 	.competences
 		padding: 20px
 	.contact_section
 		padding: 10px 10px 0;
 	.faq_title span
 		right 14px
-		
+	.articles_pagination
+		width: 90%
+	#exersises_list .lp_single
+	#articles_list .article_col .lp_single
+		width: 100% !important
