@@ -1,5 +1,5 @@
 #footer
-	padding: 60px 0 57px
+	padding: 30px 0 25px
 	background-color: #e7e8e9
 #footer_contacts
 	.logo
@@ -31,7 +31,7 @@
 	a
 		font-size: 16px;
 		font-family: "HelveticaNeueCyrLight", sans-serif;
-		color: rgba(85, 83, 254, 0.702);
+		color: #4745d7
 		display: inline-block
 		margin-bottom: 20px
 		&:focus
@@ -71,7 +71,7 @@
 	font-size: 30px;
 	z-index: 99;
 	&:hover
-		background-color: #5452fe
+		background-color: #4745d7
 		color #ffffff
 		border-color: #5452fe
 #myPolitics
@@ -86,3 +86,42 @@
 			font-family: "HelveticaNeueCyrRoman", sans-serif;
 			margin-bottom: 20px
 			line-height: 1.2
+#up
+	display: none
+	border-radius: 50px
+	background-color: #3432de
+	color #fff
+	box-shadow: 0 3px 5px rgba(0,0,0,.35)
+	width: 50px
+	height 50px
+	line-height: 50px
+	position: fixed
+	bottom 20px
+	right calc(50% - 650px)
+	text-align: center
+	font-size: 24px
+	transition: all 400ms ease;
+	animation: for_up;
+	animation-duration: .4s;
+	animation-direction: normal
+	cursor: pointer
+	z-index: 20
+@keyframes for_up
+	0% {
+		-webkit-transform: scale(1.4);
+		-ms-transform: scale(1.4);
+		-o-transform: scale(1.4);
+		transform: scale(1.4);
+	}
+	50% {
+		-webkit-transform: scale(.4);
+		-ms-transform: scale(.4);
+		-o-transform: scale(.4);
+		transform: scale(.4);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+	}

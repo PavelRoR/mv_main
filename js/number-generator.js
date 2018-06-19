@@ -141,3 +141,14 @@ $(function () {
 		}
 	})
 });
+$(function (f) {
+	var element = f('#up');
+	f(window).scroll(function () {
+		element['fade' + (f(this).scrollTop() > 200 ? 'In' : 'Out')](500);
+	});
+	$('#up').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 400);
+	});
+});

@@ -15,6 +15,9 @@
 		width: auto
 	#single
 		min-height: calc(100vh - 688px)
+	#last_posts .row
+	#courses_in_record .row
+		margin: 0
 @media screen and (min-width 1900px)
 	.container
 	#main_slider_container
@@ -289,6 +292,16 @@
 		font-size: 34px
 	#last_posts .lSAction
 		top: 160px
+	#up
+		font-size: 32px
+		width: 80px
+		height 80px
+		line-height: 80px
+		right calc(50% - 800px)
+	.contacts_container a, .contacts_container p
+		font-size: 32px
+	.feedback_form .button
+		max-width 220px
 @media screen and (max-width 1199px)
 	.contacts a
 		&:nth-child(2)
@@ -369,6 +382,8 @@
 		line-height: 1.2
 	#shulte_create
 		width 90%
+	#up
+		right 20px
 @media screen and (max-width 991px)
 	.contacts
 		text-align: center
@@ -482,6 +497,10 @@
 	.close
 		left 30px
 		right auto
+	.contacts_container .tel
+		margin-bottom: 50px
+	.feedback_form
+		padding: 50px
 @media screen and (max-width 767px)
 	#head_logo
 		display block
@@ -636,6 +655,11 @@
 	#footer_contacts .contacts a
 	#contacts_list .contacts a
 		margin-left: 0
+	.contacts_container a, .contacts_container p, .contacts_container .tel
+		margin-bottom: 20px
+	.contacts_container a span, .contacts_container p span
+		display: inline-block
+		margin-left: 10px
 @media screen and (max-width 620px)
 	#zc_cards
 		width: 435px
@@ -674,6 +698,8 @@
 		margin 20px 0 0
 	.title_block img
 		right -20px
+	.feedback_form
+		padding: 30px
 @media screen and (max-width 480px)
 	article img
 		width: 100%
@@ -759,6 +785,8 @@
 		margin: 30px auto
 	.title_block img
 		width: 250px
+	.contacts_container .tel, .contacts_container a, .contacts_container p
+		margin-bottom: 10px
 @media screen and (max-width 426px)
 	.main_title
 		font-size: 32px
@@ -934,6 +962,11 @@
 		display block
 	#shulte_cintrols input:nth-child(2)
 		margin 0 auto 10px
+	.contacts_container .tel, .contacts_container a, .contacts_container p
+		font-size: 18px
+	.feedback_form input
+		float: none
+		width: 100%
 @media screen and (max-width 380px)
 	.main_title
 	#single_article .main_title

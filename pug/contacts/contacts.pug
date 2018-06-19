@@ -1,26 +1,12 @@
 section#contacts_list
-    .container
-        .col-md-6.col-sm-12
-            //- h2.main_subtitle Тюмень
-            //- h3.main_subtitle проезд Летний, 9а,
-            //- h4.main_subtitle 
-            //-     strong 8 (499) 346-79-46
-            .contacts
-                a.tel(href="callto:8-499-346-79-46", target="_blank") тел.: 
-                    span 8-499-346-79-46
-                a.skype(href="skype:add?admin-mastervision", target="_blank") skype: 
-                    span admin-mastervision
-                a.mail(href="mailto:info@mastervision.su", target="_blank") e-mail: 
-                    span info@mastervision.su
-        .col-md-6.col-sm-12
-            #feedback
-                form(action="#!" method="POST").feedback_form
-                    h3 Написать нам
-                    input(type="text" name="name" required placeholder="Ваше имя")
-                    input(type="email" name="email" required placeholder="Ваш Email")
-                    textarea(name="msg" required placeholder="Сообщение")
-                    .checking
-                        input(type="checkbox" id="check" checked).check
-                        label(for="check").check_label Я согласен с условиями обработки 
-                            a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  персональных данных
-                    button.button(type="submit")(onclick="function(e){e.preventDefault();}") Отправить
+	.container
+		form(action="#!" method="POST").feedback_form
+			h3 Написать нам
+			input(type="text" name="name" required placeholder="Ваше имя")
+			input(type="email" name="email" required placeholder="Ваш Email")
+			textarea(name="msg" required placeholder="Сообщение")
+			.checking
+				input(type="checkbox" id="check" checked).check
+				label(for="check").check_label Я согласен с условиями обработки 
+					a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  персональных данных
+			button.button(type="submit")(onclick="function(e){e.preventDefault();}") Отправить

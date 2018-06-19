@@ -2,3 +2,17 @@ section#main_screen
 	.container
 		include ../menu
 		h1.main_title Контакты
+		.row.contacts_container
+			.col-md-3.col-sm-6
+				p Адрес:
+					span г.Тюмень,
+					span проезд Летний, 9а
+			.col-md-3.col-sm-6
+				a.tel(href="callto:8-499-346-79-46", target="_blank") тел.: 
+					span 8-499-346-79-46
+			.col-md-3.col-sm-6
+				a.skype(href="skype:add?admin-mastervision", target="_blank") skype: 
+					span admin-mastervision
+			.col-md-3.col-sm-6
+				a.mail(href="mailto:info@mastervision.su", target="_blank") e-mail: 
+					span info@mastervision.su
