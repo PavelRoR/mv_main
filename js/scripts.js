@@ -233,5 +233,18 @@ $(document).ready(function () {
         });
     });
 
+
+    $(function () {
+        $('.all_specialists').toggle(function () {
+                $('#our_specialists_more').slideDown(600);
+                $(this).text('Свернуть');
+            },
+            function () {
+                $('#our_specialists_more').slideUp(600);
+                $(this).text('Все специалисты');
+            }
+
+        )
+    });
     /*Конец документа*/
 });
