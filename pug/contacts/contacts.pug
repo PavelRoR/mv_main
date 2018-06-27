@@ -7,6 +7,7 @@ section#contacts_list
 			textarea(name="msg" required placeholder="Сообщение")
 			.checking
 				input(type="checkbox" id="check" checked).check
-				label(for="check").check_label Я согласен с условиями обработки 
-					a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  персональных данных
-			button.button(type="submit")(onclick="function(e){e.preventDefault();}") Отправить
+				label(for="check").check_label Я согласен с 
+					a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics") условиями обработки 
+					| персональных данных
+			button.button(type="submit")(onclick="return false") Отправить
